@@ -1,0 +1,191 @@
+html, body {
+    height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 150%;
+    background: linear-gradient(to bottom, #ff0000, #000000);
+}
+
+.quiz-title {
+    background-color: rgb(255, 86, 56);
+    text-align: center;
+    font-size: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: snow;
+    padding: 30px;
+    opacity: 0;
+    animation: Glide_FadeIn 3s ease-in-out forwards;
+}
+
+@keyframes Glide_FadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.quiz-container {
+    max-width: 750px;
+    height: 400px;
+    background-color:black;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 50px;
+    padding: 15px;
+}
+
+.timer {
+    font-size: 40px;
+    margin: auto;
+    background-color: chartreuse;
+    width: 150px;
+    text-align: center;
+    margin-top: 50px;
+    border-radius: 60%;
+    padding: 60px 10px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.start-button {
+    background-color: chartreuse;
+    width: 20%;
+    height: 10%;
+    border-radius: 20px;
+    margin: auto;
+    display: block; 
+    margin-top: 100px; 
+}
+
+.progress-bar-bg {
+    background-color: lightslategray;
+    width: 90%;
+    height: 12px;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.progress-bar-fill {
+    background-color:rgb(255, 0, 0);
+    width: 50%;
+    height: 12px;
+    border-radius: 10px;
+}
+
+.drop-down {
+    background-color: crimson;
+    width: 90%;
+    height: 36px;
+    margin: auto;
+    display: block;
+    margin-top: 30px;
+
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: black;
+    font-weight: 800;
+
+    border-radius: 10px;
+}
+
+.question {
+    color: mediumspringgreen;
+    font-size: 28px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}
+
+.option-Container {
+    margin: 20px;
+    height: fit-content;
+}
+
+.option-btn {
+    display: block;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 75%;
+    font-size: 28px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: darkred;
+}
+
+.option-btn:hover {
+    background-color: #000000;
+    animation: Glide_FadeIn 3s ease-in-out forwards;
+    animation: firstball 0.9s alternate ease-in;
+}
+
+@keyframes firstball {
+  0% {
+    transform: rotate(35deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}
+
+.ball.last {
+  animation: lastball 0.9s alternate ease-out;
+}
+
+@keyframes lastball {
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-35deg);
+  }
+}
+
+.score-label {
+    color: goldenrod;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.feedback-label {
+    color: cyan;
+    font-size: 12px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.bgm-selector {
+    display: block;
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    width: 60%;
+    font-size: 24px;
+    padding: 7px 9px;
+    border-radius: 10px;
+    background-color: darkslategray;
+    color: cyan;
+}
+
+.music-toggle-btn {
+    display: block;
+    margin: auto;
+    font-size: 24px;
+    padding: 7px 9px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <title> Skibidi Quiz </title>
+    <link rel="stylesheet" href="main2.css">
+</head>
+
+<body>
+    <div class="quiz-title">
+        General Knowledge 101 (If you fail go & touch grass!)
+    </div>
+
+    <div class="quiz-container">
+        <!-- progress bar -->
+        <div class="progress-bar-bg" id="progress-bar-bg">
+            <div class="progress-bar-fill" id="progress-bar-fill"></div>
+        </div>
+
+        <!-- question label -->
+        <div class="question" id="question">
+            Question will be displayed here. Click start to begin!
+        </div>
+
+        <!-- difficulty level dropdown -->
+        <select class="drop-down" id="drop-down">
+            <option value="1">🌶(😊)</option>
+            <option value="2">🌶🌶(😏)</option>
+            <option value="3">🌶🌶🌶(😫)</option>
+            <option value="4">🌶🌶🌶🌶(🥵)</option>
+            <option value="5">🌶🌶🌶🌶🌶(☠️)</option>
+        </select>
+
+        <!-- option buttons -->
+         <div class="option-container" id="option-container"></div>
+
+        <!-- score/feedback label -->
+        <div class="score-label" id="score-label">
+            You scored '0' points(s)
+        </div>
+
+        <div class="feedback-label" id="feedback-label">
+            N.A.
+        </div>
+
+        <!-- start button -->
+        <button class="start-button" id="start-button"> START </button>
+    </div>
+
+    <!-- countdown timer -->
+    <div class="timer" id="timer">
+        <span id="timer-label"> 15 </span>
+    </div>
+
+    <!-- bgm dropdown-->
+     <select class="bgm-selector" id="bgm-selector">
+        <option value=""> -- ↓Select a track that you would like!↓ -- </option>
+        <option value="Kahoot.mp3"> Kahoot Lobby Music </option>
+        <option value="Demon_Hunters_Golden.mp3"> Demon Hunters(Golden) </option>
+        <option value="Die_With_A_Smile.mp3"> Die With A Smile </option>
+        <option value="Grow_A_Garden.mp3"> Grow A Garden Song </option>
+     </select>
+
+     <button class="music-toggle-btn" id="music-toggle-btn"> 🔉Music On</button>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

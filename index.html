@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Coding Portfolio 1.0 | Thadeus </title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="main.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body background="1015.png">
+
+    <!-- responsive nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: aqua;">
+        <a class="navbar-brand" href="index.html"> LOGO </a>
+
+        <!-- Button for drop-down menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/"> GOOGLE </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.crazygames.com/"> CRAZY-GAMES </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.poki.com/"> POKI </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.scratch.mit.edu/"> SCRATCH </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.roblox.com/"> ROBLOX </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="animation.html"> MY-ANIMATIONS </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="quiz.html"> QUIZ </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-title"> Welcome To My Coding Playground! </div>
+
+    <img id="pic1" src="data:image/jpeg;base64,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">
+    
+    <table border = "1" id="table1">
+        <tr id="header-row">
+            <td> # </td>
+            <td> Subject </td>
+            <td> Timeline </td>
+        </tr>
+
+        <tr> 
+            <td> 1 </td>
+            <td> Advanced Scratch Programming </td>
+            <td> Mar 2024 - July 2024 </td>
+        </tr>
+
+        <tr> 
+            <td> 2 </td>
+            <td> Minecraft Education </td>
+            <td> Aug 2024 - Oct 2024 </td>
+        </tr>
+
+        <tr> 
+            <td> 3 </td>
+            <td> Roblox Studio (LUA Programming) </td>
+            <td> Nov 2024 - Apr 2025 </td>
+        </tr>
+
+        <tr> 
+            <td> 4 </td>
+            <td> Web Dev with HTML, CSS, JavaScript </td>
+            <td> May 2025 - Present </td>
+        </tr>
+
+    </table>
+
+    <iframe src="https://scratch.mit.edu/projects/1162939844/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <iframe src="https://scratch.mit.edu/projects/1158698608/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+</body>
+</html>
